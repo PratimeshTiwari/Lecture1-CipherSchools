@@ -1,22 +1,27 @@
-// #include<iostream>
-#include<iostream>
-using namespace std;
-int main(){
-int a = 10;
-int *p = &a;
-char ch = 'a';
-char* pch = &ch;
-int b= 10;
-// int&a= b;
-// int c=&b;
-if(sizeof(pch) == sizeof(p)){
-cout<<"hey"<<endl;
-}else{
-cout<<"hii"<<endl;
 
+#include <iostream>
+using namespace std; 
+int main() {
+    
+   
+int a;
+
+cout<<"enter an integer:";
+
+cin>>a;
+
+switch(a){
+    case 1:
+    cout<<"the value of a is 1";
+    break;
+    
+    case 2:
+    cout<<"the value of a is 2";
+    break;
+    
+    default:
+    cout<<"default will be always printed";
+    break;
 }
-// cout<<*(&a)<<endl;
-// cout<<*p<<endl;
-// cout<<sizeof(p)<<endl;
-return 0;
+    return 0;
 }
