@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 bool isEligibleToVote(int age) {
-    if (age < 0)
+    if(age<0)
         return false;
     else if (age == 0)
         return true;
@@ -11,7 +11,7 @@ bool isEligibleToVote(int age) {
 
 int main() {
     int age;
-    cout << "Enter your age: ";
+    cout << "Enter your age:- ";
     cin >> age;
 
     if (isEligibleToVote(age))
